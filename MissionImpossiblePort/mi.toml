@@ -1,0 +1,15 @@
+# Example configuration for Mission: Impossible recompilation
+
+[input]
+# Adjust the entrypoint and file paths for your environment
+entrypoint = 0x80000000
+output_func_path = "RecompiledFuncs"
+# Path to a text file listing relocatable overlay sections (if needed)
+relocatable_sections_path = "overlays.txt"
+elf_path = "mi.elf"
+symbols_file_path = "mi.syms.toml"
+rom_file_path = "MI/Missionimpossible.z64"
+
+[patches]
+stubs = []
+ignored = []
